@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e744e38b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="logo.png" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UX Designer</p>
+          <h1>Hi, I'm <span>Muhammad <br>Ibrahim Khan</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------About------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="ME.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Aspiring UX designer passionate about crafting intuitive, user-centric digital experiences. Skilled in design thinking, usability, and problem-solving, I merge creativity with analytical insights to enhance user interactions. Proficient in Figma and Canva, with a sharp eye for detail and a continuous drive for learning. Eager to contribute innovative, user-focused solutions in dynamic, forward-thinking teams.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div>
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                  <li><span>*UI/UX</span><br />Designing Web/App Interfaces</li>
+                  <li><span>DEVELOPMENT</span><br />Front-End Collaboration</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Experience">
+                <ul>
+                  <li>
+                    <span>Fauji Fertilizer Bin Qasim
+                      Ltd(FFBL)</span><br />Information and Communication Technology Intern
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span>SCHOOLING</span><br />Roots School System</li>
+                  <li><span>MATRICULATION</span><br />Global School System</li>
+                  <li>
+                    <span>INTERMEDIATE</span><br />Fauji Foundation College
+                  </li>
+                  <li>
+                    <span>BACHELORS</span><br />B.Sc in Software Engineering
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----SERVICES---- -->
+    <div id="Services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div onclick="openModal('webDesignModal')">
+            <i class="fa-solid fa-code"></i>
+            <h2>WEB DESIGN</h2>
+            <p>Creating visually appealing and user-friendly websites.</p>
+          </div>
+          <div onclick="openModal('developmentModal')">
+            <i class="fa-solid fa-code"></i>
+            <h2>DEVELOPMENT</h2>
+            <p>Building robust and scalable web applications.</p>
+          </div>
+          <div onclick="openModal('appDesignModal')">
+            <i class="fa-solid fa-code"></i>
+            <h2>APP DESIGN</h2>
+            <p>Designing intuitive mobile applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="webDesignModal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close" onclick="closeModal('webDesignModal')">&times;</span> -->
+        <h2 id="heading">
+          <i class="fa-solid fa-code"></i>
+          WEB DESIGN
+        </h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi unde quos architecto quas amet eos consequuntur quam? Et officiis error labore quisquam commodi ullam accusamus libero assumenda obcaecati hic, odio, eum inventore tempore eveniet velit, dolorum laboriosam unde explicabo sequi! Pariatur minus reprehenderit placeat repudiandae? Reprehenderit suscipit ipsum unde autem provident veritatis ullam modi repellendus fuga, sit vero, maxime obcaecati corporis amet sunt mollitia non quidem nisi ratione maiores delectus, cum corrupti? Perferendis ipsum quidem mollitia debitis illum! Reiciendis debitis quae voluptatem officia in, itaque odit dolor, amet ipsa labore ducimus laboriosam non tempore minima impedit, quam eius sequi temporibus.<br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sit aperiam officia distinctio laborum esse sunt animi maxime? Aut assumenda at obcaecati sapiente repellendus, omnis voluptates accusantium deserunt temporibus porro animi quasi enim recusandae dolore quam vel debitis pariatur eligendi, neque ab, odio aspernatur nobis exercitationem laborum? Rerum, dolores facilis?
+        </p>
+      </div>
+    </div>
+
+    <div id="developmentModal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close" onclick="closeModal('developmentModal')">&times;</span> -->
+        <h2 id="heading">
+          <i class="fa-solid fa-code"></i>
+          Development
+        </h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veniam praesentium sed tempore deserunt quidem dolorum! Odit velit porro minus, iusto quas error eos expedita aspernatur. Odio similique quos maiores tempore nobis consequuntur dolores nulla reprehenderit id corporis perferendis iste, quae sequi! Facere in ab magni veniam, facilis excepturi porro! Explicabo neque nulla sint facilis in dolorem reiciendis, expedita, a cumque blanditiis hic tempora voluptatibus fugit assumenda itaque, cupiditate voluptate odio! Excepturi maiores eaque, corporis nesciunt delectus magnam corrupti quis autem tenetur ab molestiae aut aspernatur quod inventore quasi dolores explicabo dolor odio illum, eligendi voluptate omnis in illo. Aut! <br><br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti doloremque magnam dolore pariatur nam iste animi illo quia cumque, incidunt maxime. Voluptatem excepturi enim corrupti sapiente laudantium, repellat facere ullam distinctio alias vel qui atque ducimus molestias similique tempore numquam quibusdam placeat quos porro consequuntur eum sunt soluta rem?
+        </p>
+      </div>
+    </div>
+
+    <div id="appDesignModal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close" onclick="closeModal('appDesignModal')">&times;</span> -->
+        <h2 id="heading">
+          <i class="fa-solid fa-code"></i>
+          App Design
+        </h2><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aspernatur soluta necessitatibus sequi, eaque optio quae pariatur quis sint impedit nobis inventore maxime, laudantium quos! Omnis maiores nulla fuga, optio, dolore natus inventore eum dolorem, nostrum iste excepturi. Distinctio asperiores voluptatum, velit, rerum sunt vitae necessitatibus, repellat saepe quam in architecto aliquid aperiam ab dolor obcaecati illum iure natus molestias quasi dolorum fugit rem suscipit doloremque? Excepturi laboriosam dignissimos harum animi! Ratione est quidem, deserunt tempore, alias mollitia delectus iusto, sit natus magnam praesentium ad illum eaque facilis nobis error magni odio dignissimos. Assumenda aspernatur dolores qui, cum sapiente reprehenderit! <br><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium velit at omnis perspiciatis dolores sequi necessitatibus, quos minima doloremque nam excepturi, saepe eveniet odio obcaecati earum cumque id delectus. Omnis repellendus itaque voluptate at cupiditate, ipsa natus reprehenderit harum distinctio delectus, exercitationem quaerat, nobis doloremque fuga similique dignissimos ex dolorum?
+        </p>
+      </div>
+    </div>
+    <!-- ------portfolio------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="working">
+          <div class="work-list">
+            <a href="uts.html" class="work"> <!-- <a> tag ko pura div wrap kar diya -->
+              <img src="UTS LOGO.png" />
+              <div class="layer">
+                <h3>Usama Transport Solution</h3>
+                <p>A university-focused transport management system for students and faculty.</p>
+              </div>
+            </a>
+          </div>
+          <div class="work-list">
+            <a href="#">
+            <div class="work">
+              <img src="./Daraz Logo.png" />
+              <div class="layer">
+                <h3>DARAZ</h3>
+                <p>Enhancing the UX of Pakistan’s leading e-commerce platform by improving navigation, checkout flow, and overall usability for a seamless shopping experience.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="work-list">
+            <a href="#">
+            <div class="work">
+              <img src="./askari bank.png" />
+              <div class="layer">
+                <h3>ASKARI BANK</h3>
+                <p>Redesigning the mobile banking experience with a modern UI, intuitive navigation, and user-friendly features to improve accessibility and engagement.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="work-list">
+            <a href="#">
+            <div class="work">
+              <img src="./askari bank.png" />
+              <div class="layer">
+                <h3>ASKARI BANK</h3>
+                <p>Redesigning the mobile banking experience with a modern UI, intuitive navigation, and user-friendly features to improve accessibility and engagement.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="work-list">
+            <a href="#">
+            <div class="work">
+              <img src="./askari bank.png" />
+              <div class="layer">
+                <h3>ASKARI BANK</h3>
+                <p>Redesigning the mobile banking experience with a modern UI, intuitive navigation, and user-friendly features to improve accessibility and engagement.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="work-list">
+            <a href="#">
+            <div class="work">
+              <img src="./askari bank.png" />
+              <div class="layer">
+                <h3>ASKARI BANK</h3>
+                <p>Redesigning the mobile banking experience with a modern UI, intuitive navigation, and user-friendly features to improve accessibility and engagement.</p>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ----------Contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >Muhammad.Ibrahim.k@protonmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i>+92-333-5206459</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/muhammadibrahim.khan.146612/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-ibrahimkhan/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/ibbziz/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="IBRAHIM RESUME.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email"name="Email"placeholder="Your Email"required/>
+            <textarea name ="Message"rows="6"placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-solid fa-copyright"></i> Made by IBBI<i
+            class="fa-solid fa-code"
+          ></i
+          >.
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+      'https://script.google.com/macros/s/AKfycbyEGTiu9AZjXxJINJQ0KZeaoMcXcy90k0js6-Z_UNapruuVIwO001Pmt3g1ILEfKEMy/exec'
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.classList.add('show'); // Add the show class to make it visible
+
+      // Close modal when clicking outside of the modal content
+      modal.onclick = function(event) {
+        if (event.target === modal) {
+          closeModal(modalId);
+        }
+      };
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.classList.remove('show'); // Remove the show class to hide it
+    }
+    </script>
+
+    <!-- ----------jQuery for Hide and Show Elements---------- -->
+
+    <script>
+      $(document).ready(function() {
+        // Initially hide all work-list items except the first three
+        $('.work-list').hide(); // Hide all work-list items
+        $('.work-list').slice(0, 3).show(); // Show the first three work-list items
+      
+        // Click event for the "See more" button
+        $('.btn').click(function(e) {
+          e.preventDefault(); // Prevent default anchor click behavior
+          var $this = $(this); // Cache the button reference
+      
+          // Check if all work-list items are visible
+          if ($('.work-list:visible').length < $('.work-list').length) {
+            // Show all work-list items
+            $('.work-list').show();
+            $this.text('Hide less'); // Change button text to "Hide less"
+          } else {
+            // Hide all work-list items except the first three
+            $('.work-list').hide();
+            $('.work-list').slice(0, 3).show(); // Show the first three again
+            $this.text('See more'); // Change button text back to "See more"
+          }
+        });
+      });
+      </script>
+  </body>
+</html>
